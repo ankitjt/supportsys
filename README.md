@@ -1,5 +1,13 @@
-# supportsys
+# CSS ( Customer Support Systems) 🚀
 
-A support system for your project
+## A readily available customer support system for your business
 
-Project road map below
+_Salient's features_
+
+-   Easy to integrate.
+-   Easy to configure.
+-   Support for in-team emails, chats.
+
+## Project road map below
+
+> To be added soon
