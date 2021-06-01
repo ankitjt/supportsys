@@ -10,8 +10,8 @@ _Salient's features_
 
 ## Project road map below
 
-1. Administrative 
+1. Administrative
 2. Team Members
-3. Customers 
+3. Customers
 
 > To be added soon
