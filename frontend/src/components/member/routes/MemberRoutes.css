@@ -1,4 +1,118 @@
+:root {
+    --baseColor: #668bf9;
+    --fontColor: #f1f1f1;
+    --linkColor: #668bf9;
+}
+
 .module-wrapper {
-    height: 100%;
+    height: auto;
     width: calc(100% - 250px);
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    box-sizing: border-box !important;
+}
+
+.pills {
+    box-shadow: 2px 2px 20px #e1e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    width: 75%;
+}
+.custom-buttons {
+    background-color: var(--baseColor);
+    border: none;
+    color: var(--fontColor);
+    box-shadow: 0 0 1px #212121;
+    font-family: inherit;
+    border-radius: 3px !important;
+    width: auto;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    font-weight: bolder !important;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+    outline: none;
+}
+
+input,
+.create-start-time,
+.create-end-time {
+    border-radius: 0 !important;
+}
+.input-boxes {
+    padding: 6px 0;
+    margin: 18px 0;
+    width: 100%;
+    outline: transparent !important;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #668bf9;
+    font-size: 14px;
+    font-family: inherit;
+    color: #525252;
+    font-weight: bolder;
+    border-radius: 0 !important;
+}
+
+.timeAndDate {
+    padding: 20px 0;
+}
+.timeAndDate span {
+    font-size: 13px;
+    border-radius: 0 !important;
+    background: var(--baseColor);
+    color: #eee;
+    border: none;
+}
+.timeAndDate input {
+    border: none;
+    border-bottom: 2px solid #668bf9;
+    margin-top: 2.5px;
+    border-radius: 0 !important;
+}
+
+.pills .table-name {
+    color: var(--baseColor);
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px 20px 0 0;
+}
+.noData {
+    font-weight: bolder;
+    font-size: 18px;
+    color: orangered;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.top-navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Notes */
+.upload-document-notes {
+    list-style-type: none;
+    padding: 10px 0;
+    background-color: #f1f3f8;
+    border-radius: 6px;
+    width: 100%;
+    color: #ff7171;
+    font-weight: bold;
+}
+
+.upload-document-notes li {
+    padding: 0 20px;
+    width: 100%;
+    text-align: justify;
 }

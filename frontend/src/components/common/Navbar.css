@@ -1,6 +1,9 @@
 .member-navbar {
     height: 100vh;
     width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #222b36;
     display: flex;
     flex-direction: column;
@@ -9,16 +12,15 @@
 }
 
 .navbar-links {
-    padding: 15px;
+    padding: 14px 15px;
     text-decoration: none;
     color: #668bf9;
     transition: 0.5s ease;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
     border-radius: 12px;
-    margin: 10px 0;
     vertical-align: middle;
     display: flex;
     align-items: center;
@@ -37,7 +39,6 @@
 }
 
 .navbar-inner {
-    /* padding-top: 30px; */
     padding: 0 30px;
 }
 
@@ -46,7 +47,7 @@
     text-decoration: none;
     color: #668bf9;
     transition: 0.5s ease;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;

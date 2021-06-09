@@ -2,7 +2,7 @@ import React from "react";
 
 const Leaves = () => {
     return (
-        <div>
+        <div className='module-wrapper'>
             <h1>Leaves</h1>
         </div>
     );

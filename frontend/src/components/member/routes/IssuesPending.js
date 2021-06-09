@@ -2,7 +2,7 @@ import React from "react";
 
 const IssuesPending = () => {
     return (
-        <div>
+        <div className='module-wrapper'>
             <h1>Pending</h1>
         </div>
     );

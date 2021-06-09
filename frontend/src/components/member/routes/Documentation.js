@@ -2,7 +2,7 @@ import React from "react";
 
 const Documentation = () => {
     return (
-        <div>
+        <div className='module-wrapper'>
             <h1>Documentation</h1>
         </div>
     );

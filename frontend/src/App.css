@@ -1,5 +1,5 @@
 .app-wrapper {
-    height: 100%;
+    height: auto;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     display: flex;

@@ -2,7 +2,7 @@ import React from "react";
 
 const Issues = () => {
     return (
-        <div>
+        <div className='module-wrapper'>
             <h1>Issues</h1>
         </div>
     );
