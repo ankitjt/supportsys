@@ -14,10 +14,10 @@ const LoginPage = () => {
                     <nav>
                         <ul className='login-links'>
                             <li>
-                                <Link to='/memberHome'>Member</Link>
+                                <Link to='/member'>Member</Link>
                             </li>
                             <li>
-                                <Link to='/adminHome'>Administrator</Link>
+                                <Link to='/admin'>Administrator</Link>
                             </li>
                         </ul>
                     </nav>

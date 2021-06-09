@@ -1,10 +1,33 @@
 import React from "react";
-import "./Member.css";
+import "./MemberHome.css";
+import MemberNavbar from "../common/MemberNavbar";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./routes/Home";
+import Documentation from "./routes/Documentation";
+import Issues from "./routes/Issues";
+import Leaves from "./routes/Leaves";
+import Profile from "./routes/Profile";
+import Reports from "./routes/Reports";
+import Announcements from "./routes/Announcements";
+import IssuesPending from "./routes/IssuesPending";
+
 const MemberHome = () => {
     return (
-        <div className='member-home'>
-            <h1>This is the Member Home</h1>
-        </div>
+        <Router>
+            <div className='member-home'>
+                <MemberNavbar />
+                <Switch>
+                    <Route path='/member/home' exact component={Home} />
+                    <Route path='/member/reports' exact component={Reports} />
+                    <Route path='/member/documentation' exact component={Documentation} />
+                    <Route path='/member/issues' exact component={Issues} />
+                    <Route path='/member/leaves' exact component={Leaves} />
+                    <Route path='/member/profile' exact component={Profile} />
+                    <Route path='/member/announcements' exact component={Announcements} />
+                    <Route path='/member/issues/pending' exact component={IssuesPending} />
+                </Switch>
+            </div>
+        </Router>
     );
 };
 
