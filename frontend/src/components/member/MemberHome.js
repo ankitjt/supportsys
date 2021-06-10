@@ -10,6 +10,8 @@ import Profile from "./routes/Profile";
 import Reports from "./routes/Reports";
 import Announcements from "./routes/Announcements";
 import IssuesPending from "./routes/IssuesPending";
+import LeavesApply from "./routes/LeavesApply";
+import LeavesStatus from "./routes/LeavesStatus";
 
 const MemberHome = () => {
     return (
@@ -25,6 +27,7 @@ const MemberHome = () => {
                     <Route path='/member/profile' exact component={Profile} />
                     <Route path='/member/announcements' exact component={Announcements} />
                     <Route path='/member/issues/pending' exact component={IssuesPending} />
+                    <Route path='/member/leaves/apply' exact component={LeavesApply} />
                 </Switch>
             </div>
         </Router>
