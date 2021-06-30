@@ -1,29 +1,28 @@
-import React from "react";
-import login_page_icon from "../assets/login_page_icon2.svg";
-import { Link } from "react-router-dom";
-import "./LoginPage.css";
+import React from 'react';
+import login_page_icon from '../assets/login_page_icon2.svg';
+import { Link } from 'react-router-dom';
+import { loginPageStyles } from './LoginPageStyle.js';
+import { Grid } from '@material-ui/core';
 
 const LoginPage = () => {
+    const classes = loginPageStyles();
     return (
-        <>
-            <div className='container login-page'>
-                <div className='logo-holder'>
-                    <img src={login_page_icon} alt='companyLogo' className='companyLogo' />
-                </div>
-                <div className='login-screen'>
-                    <nav>
-                        <ul className='login-links'>
-                            <li>
-                                <Link to='/member'>Member</Link>
-                            </li>
-                            <li>
-                                <Link to='/admin'>Administrator</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </>
+        <Grid container direction='column' justify='center' alignItems='center' className={classes.gridContainer}>
+            <Grid item>
+                <img src={login_page_icon} alt='Login Page Icon' className={classes.loginLogo} />
+            </Grid>
+            <Grid item>
+                <Grid
+                    container
+                    direction='column'
+                    justify='center'
+                    alignItems='center'
+                    className={classes.loginPageLinks}>
+                    <Link to='/member/'>Member</Link>
+                    <Link to='/admin'>Administrator</Link>
+                </Grid>
+            </Grid>
+        </Grid>
     );
 };
 

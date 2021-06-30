@@ -6,8 +6,6 @@
 
 .module-wrapper {
     height: auto;
-    width: calc(100% - 250px);
-    margin-left: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
